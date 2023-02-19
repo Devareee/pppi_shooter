@@ -11,6 +11,10 @@ func (m *Menu) MultiplayerClicked() {
 
 }
 
+func (m *Menu) SettingsClicked() {
+
+}
+
 func (m *Menu) ExitClicked() {
 
 }
