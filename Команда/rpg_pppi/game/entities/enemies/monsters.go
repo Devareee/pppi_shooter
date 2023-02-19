@@ -9,3 +9,7 @@ type Monsters struct {
 func (b *Monsters) Attack() {
 
 }
+
+func (b *Monsters) Protect() {
+
+}
