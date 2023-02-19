@@ -9,3 +9,7 @@ type Bosses struct {
 func (b *Bosses) Attack() {
 
 }
+
+func (b *Bosses) Protect() {
+
+}
