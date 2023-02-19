@@ -9,3 +9,7 @@ type World struct {
 func (w *World) Generate() {
 
 }
+
+func (w *World) Change() {
+
+}
