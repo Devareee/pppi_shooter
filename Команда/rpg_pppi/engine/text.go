@@ -10,3 +10,7 @@ func (t *Text) Draw() {
 func (t *Text) NewText() {
 
 }
+
+func (t *Text) Auto() {
+
+}
