@@ -1,1259 +1,516 @@
-﻿<book xmlns="http://docbook.org/ns/docbook" version="5.0">
+---
+title: Документация шутера
+---
 
-<info>
+# Класс Audio
 
-<title>Документация шутера</title>
+## Описание
 
-</info>
+Класс Audio используется для работы с аудио ресурсами
 
-<chapter>
+## Поля
 
-<title>Класс Audio</title>
+-   `sound` - звук для проигрывания
 
-<section>
+## Методы
 
-<title>Описание</title>
+### `on()`
 
-<para>Класс Audio используется для работы с аудио ресурсами</para>
+Метод для включения звука
 
-</section>
+### `off()`
 
-<section>
+Метод для выключения звука
 
-<title>Поля</title>
+# Класс Camera
 
-<itemizedlist>
+## Описание
 
-<listitem><para><literal>sound</literal> - звук для проигрывания</para></listitem>
+Класс Camera используется для обработки движения камеры
 
-</itemizedlist>
+## Поля
 
-</section>
+-   `aim` - текущая цель камеры
 
-<section>
+## Методы
 
-<title>Методы</title>
+### `redirect()`
 
-<section>
+Метод для перенастройки камеры на новую цель
 
-<title><literal>on()</literal></title>
+# Класс Control
 
-<para>Метод для включения звука</para>
+## Описание
 
-</section>
+Класс Control используется для управления персонажем
 
-<section>
+## Поля
 
-<title><literal>off()</literal></title>
+-   `character` - текущий персонаж
 
-<para>Метод для выключения звука</para>
+## Методы
 
-</section>
+### `set()`
 
-</section>
+Метод для перенастройки на другого персонажа
 
-</chapter>
+# Класс Generate
 
-<chapter>
+## Описание
 
-<title>Класс Camera</title>
+Класс Generate используется для генерации карты игры
 
-<section>
+## Поля
 
-<title>Описание</title>
+-   `map` - список объектов карты
 
-<para>Класс Camera используется для обработки движения камеры</para>
+## Методы
 
-</section>
+### `random()`
 
-<section>
+Метод для добавления случайных объектов на карту
 
-<title>Поля</title>
+# Класс Graphics
 
-<itemizedlist>
+## Описание
 
-<listitem><para><literal>aim</literal> - текущая цель камеры</para></listitem>
+Класс Graphics используется для работы с функциями графической
+библиотеки
 
-</itemizedlist>
+## Поля
 
-</section>
+-   `graphics` - текущие настройки графики
 
-<section>
+## Методы
 
-<title>Методы</title>
+### `up()`
 
-<section>
+Метод для изменения настроек графики
 
-<title><literal>redirect()</literal></title>
+# Класс Health
 
-<para>Метод для перенастройки камеры на новую цель</para>
+## Описание
 
-</section>
+Класс Health используется для изменения состояния здоровья
 
-</section>
+## Поля
 
-</chapter>
+-   `health` - текущее здоровье персонажа
 
-<chapter>
+## Методы
 
-<title>Класс Control</title>
+### `down()`
 
-<section>
+Метод для изменения здоровья персонажа
 
-<title>Описание</title>
+# Класс Load
 
-<para>Класс Control используется для управления персонажем</para>
+## Описание
 
-</section>
+Класс Load используется для загрузки матча
 
-<section>
+## Поля
 
-<title>Поля</title>
+-   `map` - текущая карта игры
 
-<itemizedlist>
+## Методы
 
-<listitem><para><literal>character</literal> - текущий персонаж</para></listitem>
+### `map_choice()`
 
-</itemizedlist>
+Метод для изменения текущей карты игры
 
-</section>
+# Класс Menu
 
-<section>
+## Описание
 
-<title>Методы</title>
+Класс Menu используется для работы с главным меню
 
-<section>
+## Поля
 
-<title><literal>set()</literal></title>
+-   `menu` - окно главного меню
 
-<para>Метод для перенастройки на другого персонажа</para>
+## Методы
 
-</section>
+### `start()`
 
-</section>
+Метод для начала игры
 
-</chapter>
+# Класс Settings
 
-<chapter>
+## Описание
 
-<title>Класс Generate</title>
+Класс Settings используется для настроек игры
 
-<section>
+## Поля
 
-<title>Описание</title>
+-   `settings` - текущие настройки игры
 
-<para>Класс Generate используется для генерации карты игры</para>
+## Методы
 
-</section>
+### `change()`
 
-<section>
+Метод для изменения текущих настроек игры
 
-<title>Поля</title>
+# Класс Chat
 
-<itemizedlist>
+## Описание
 
-<listitem><para><literal>map</literal> - список объектов карты</para></listitem>
+Класс Chat используется для чата игроков
 
-</itemizedlist>
+## Поля
 
-</section>
+-   `chat` - текущий чат игроков
 
-<section>
+## Методы
 
-<title>Методы</title>
+### `send()`
 
-<section>
+Метод для отправки сообщения в чат
 
-<title><literal>random()</literal></title>
+# Класс FriendsGame
 
-<para>Метод для добавления случайных объектов на карту</para>
+## Описание
 
-</section>
+Класс FriendsGame используется для игры с друзьями
 
-</section>
+## Поля
 
-</chapter>
+-   `players` - текущий список игроков
 
-<chapter>
+## Методы
 
-<title>Класс Graphics</title>
+### `add()`
 
-<section>
+Метод для добавления друга в игру
 
-<title>Описание</title>
+# Класс Friends
 
-<para>Класс Graphics используется для работы с функциями графической библиотеки</para>
+## Описание
 
-</section>
+Класс Friends используется для системы друзей
 
-<section>
+## Поля
 
-<title>Поля</title>
+-   `friends` - текущий список друзей
 
-<itemizedlist>
+## Методы
 
-<listitem><para><literal>graphics</literal> - текущие настройки графики</para></listitem>
+### `add()`
 
-</itemizedlist>
+Метод для добавления друга
 
-</section>
+# Класс Initialization
 
-<section>
+## Описание
 
-<title>Методы</title>
+Класс Initialization используется для инициализации игрока
 
-<section>
+## Поля
 
-<title><literal>up()</literal></title>
+-   `player` - текущий игрок
 
-<para>Метод для изменения настроек графики</para>
+## Методы
 
-</section>
+### `load()`
 
-</section>
+Метод для инициализации игрока
 
-</chapter>
+# Класс Reports
 
-<chapter>
+## Описание
 
-<title>Класс Health</title>
+Класс Reports используется для системы репортов
 
-<section>
+## Поля
 
-<title>Описание</title>
+-   `report` - текущая жалоба
 
-<para>Класс Health используется для изменения состояния здоровья</para>
+## Методы
 
-</section>
+### `send()`
 
-<section>
+Метод для отправки жалобы
 
-<title>Поля</title>
+# Класс Achievements
 
-<itemizedlist>
+## Описание
 
-<listitem><para><literal>health</literal> - текущее здоровье персонажа</para></listitem>
+Класс Achievements используется для системы достижений
 
-</itemizedlist>
+## Поля
 
-</section>
+-   `achievements` - текущий список достижений
 
-<section>
+## Методы
 
-<title>Методы</title>
+### `add()`
 
-<section>
+Метод для получения нового достижения
 
-<title><literal>down()</literal></title>
+# Класс Currency
 
-<para>Метод для изменения здоровья персонажа</para>
+## Описание
 
-</section>
+Класс Currency используется для работы с игровой валютой
 
-</section>
+## Поля
 
-</chapter>
+-   `coins` - текущее количество монет игрока
 
-<chapter>
+-   `gems` - текущее количество алмазов игрока
 
-<title>Класс Load</title>
+## Методы
 
-<section>
+### `add_coins()`
 
-<title>Описание</title>
+Метод для добавления к текущему количеству монет
 
-<para>Класс Load используется для загрузки матча</para>
+### `sub_coins()`
 
-</section>
+Метод для вычитания из текущего количества монет
 
-<section>
+### `add_gems()`
 
-<title>Поля</title>
+Метод для добавления к текущему количеству алмазов
 
-<itemizedlist>
+### `sub_gems()`
 
-<listitem><para><literal>map</literal> - текущая карта игры</para></listitem>
+Метод для вычитания из текущего количества алмазов
 
-</itemizedlist>
+# Класс Inventory
 
-</section>
+## Описание
 
-<section>
+Класс Inventory используется для инвентаря
 
-<title>Методы</title>
+## Поля
 
-<section>
+-   `inventory` - текущий инвентарь
 
-<title><literal>map\_choice()</literal></title>
+## Методы
 
-<para>Метод для изменения текущей карты игры</para>
+### `add()`
 
-</section>
+Метод для добавления нового предмета в инвентарь
 
-</section>
+# Класс Pumping
 
-</chapter>
+## Описание
 
-<chapter>
+Класс Pumping используется для прокачки персонажа
 
-<title>Класс Menu</title>
+## Поля
 
-<section>
+-   `level` - текущий уровень игрока
 
-<title>Описание</title>
+## Методы
 
-<para>Класс Menu используется для работы с главным меню</para>
+### `up()`
 
-</section>
+Метод для повышения уровня игрока
 
-<section>
+# Класс Shop
 
-<title>Поля</title>
+## Описание
 
-<itemizedlist>
+Класс Shop используется для прокачки персонажа
 
-<listitem><para><literal>menu</literal> - окно главного меню</para></listitem>
+## Поля
 
-</itemizedlist>
+-   `shop` - текущий список предметов в магазине
 
-</section>
+-   `price` - текущий список цен на предметы в магазине
 
-<section>
+-   `currency` - текущий счет игрока
 
-<title>Методы</title>
+## Методы
 
-<section>
+### `buy()`
 
-<title><literal>start()</literal></title>
+Метод для покупки нового предмета
 
-<para>Метод для начала игры</para>
+# Класс Skin
 
-</section>
+## Описание
 
-</section>
+Класс Skin используется для скинов персонажей
 
-</chapter>
+## Поля
 
-<chapter>
+-   `skin` - текущий скин персонажа
 
-<title>Класс Settings</title>
+-   `skins` - текущий список скинов персонажа
 
-<section>
+## Методы
 
-<title>Описание</title>
+### `change()`
 
-<para>Класс Settings используется для настроек игры</para>
+Метод для смены скина
 
-</section>
+# Класс Tasks
 
-<section>
+## Описание
 
-<title>Поля</title>
+Класс Tasks используется для системы заданий
 
-<itemizedlist>
+## Поля
 
-<listitem><para><literal>settings</literal> - текущие настройки игры</para></listitem>
+-   `tasks` - текущий список заданий
 
-</itemizedlist>
+-   `done_tasks` - список выполненных заданий
 
-</section>
+## Методы
 
-<section>
+### `done()`
 
-<title>Методы</title>
+Метод для выполнения задания
 
-<section>
+# Класс Aim
 
-<title><literal>change()</literal></title>
+## Описание
 
-<para>Метод для изменения текущих настроек игры</para>
+Класс Aim используется для прицеливания
 
-</section>
+## Поля
 
-</section>
+-   `aim` - текущая цель
 
-</chapter>
+## Методы
 
-<chapter>
+### `off()`
 
-<title>Класс Chat</title>
+Метод для выключения прицела
 
-<section>
+### `on()`
 
-<title>Описание</title>
+Метод для включения прицела
 
-<para>Класс Chat используется для чата игроков</para>
+# Класс Choose
 
-</section>
+## Описание
 
-<section>
+Класс Choose используется для выбора оружия
 
-<title>Поля</title>
+## Поля
 
-<itemizedlist>
+-   `current_weapon` - текущее оружие персонажа
 
-<listitem><para><literal>chat</literal> - текущий чат игроков</para></listitem>
+## Методы
 
-</itemizedlist>
+### `change()`
 
-</section>
+Метод для смены оружия персонажа
 
-<section>
+# Класс Combat
 
-<title>Методы</title>
+## Описание
 
-<section>
+Класс Combat используется для боевой системы
 
-<title><literal>send()</literal></title>
+## Поля
 
-<para>Метод для отправки сообщения в чат</para>
+-   `combat` - текущая боевая система
 
-</section>
+## Методы
 
-</section>
+### `change()`
 
-</chapter>
+Метод для смены боевой системы
 
-<chapter>
+# Класс EnemyHit
 
-<title>Класс FriendsGame</title>
+## Описание
 
-<section>
+Класс EnemyHit используется для попадания по противнику
 
-<title>Описание</title>
+## Поля
 
-<para>Класс FriendsGame используется для игры с друзьями</para>
+-   `hit` - текущее состояние противника
 
-</section>
+## Методы
 
-<section>
+### `shot()`
 
-<title>Поля</title>
+Метод для смены состояния противника после выстрела
 
-<itemizedlist>
+# Класс Equipment
 
-<listitem><para><literal>players</literal> - текущий список игроков</para></listitem>
+## Описание
 
-</itemizedlist>
+Класс Equipment используется для элементов снаряжения
 
-</section>
+## Поля
 
-<section>
+-   `equipment` - текущий список элементов снаряжения
 
-<title>Методы</title>
+## Методы
 
-<section>
+### `set()`
 
-<title><literal>add()</literal></title>
+Метод для установки новых элементов снаряжения
 
-<para>Метод для добавления друга в игру</para>
+# Класс Kill
 
-</section>
+## Описание
 
-</section>
+Класс Kill используется для убийства противника
 
-</chapter>
+## Поля
 
-<chapter>
+-   `alive` - текущее состояние противника
 
-<title>Класс Friends</title>
+## Методы
 
-<section>
+### `kill()`
 
-<title>Описание</title>
+Метод для убийства противника
 
-<para>Класс Friends используется для системы друзей</para>
+# Класс Recharge
 
-</section>
+## Описание
 
-<section>
+Класс Recharge используется для перезарядки
 
-<title>Поля</title>
+## Поля
 
-<itemizedlist>
+-   `bullets` - текущее количество пуль
 
-<listitem><para><literal>friends</literal> - текущий список друзей</para></listitem>
+## Методы
 
-</itemizedlist>
+### `reload()`
 
-</section>
+Метод для перезарядки
 
-<section>
+# Класс Shooting
 
-<title>Методы</title>
+## Описание
 
-<section>
+Класс Shooting используется для стрельбы
 
-<title><literal>add()</literal></title>
+## Поля
 
-<para>Метод для добавления друга</para>
+-   `shot` - текущее состояние оружия
 
-</section>
+## Методы
 
-</section>
+### `shoot()`
 
-</chapter>
+Метод для стрельбы
 
-<chapter>
+# Класс TextureHit
 
-<title>Класс Initialization</title>
+## Описание
 
-<section>
+Класс TextureHit используется для попадания по текстурам
 
-<title>Описание</title>
+## Поля
 
-<para>Класс Initialization используется для инициализации игрока</para>
+-   `hit` - текущее состояние текстуры
 
-</section>
+## Методы
 
-<section>
+### `shot()`
 
-<title>Поля</title>
+Метод для смены состояния текстуры после выстрела
 
-<itemizedlist>
-
-<listitem><para><literal>player</literal> - текущий игрок</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>load()</literal></title>
-
-<para>Метод для инициализации игрока</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Reports</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Reports используется для системы репортов</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>report</literal> - текущая жалоба</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>send()</literal></title>
-
-<para>Метод для отправки жалобы</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Achievements</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Achievements используется для системы достижений</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>achievements</literal> - текущий список достижений</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>add()</literal></title>
-
-<para>Метод для получения нового достижения</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Currency</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Currency используется для работы с игровой валютой</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>coins</literal> - текущее количество монет игрока</para></listitem>
-
-<listitem><para><literal>gems</literal> - текущее количество алмазов игрока</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>add\_coins()</literal></title>
-
-<para>Метод для добавления к текущему количеству монет</para>
-
-</section>
-
-<section>
-
-<title><literal>sub\_coins()</literal></title>
-
-<para>Метод для вычитания из текущего количества монет</para>
-
-</section>
-
-<section>
-
-<title><literal>add\_gems()</literal></title>
-
-<para>Метод для добавления к текущему количеству алмазов</para>
-
-</section>
-
-<section>
-
-<title><literal>sub\_gems()</literal></title>
-
-<para>Метод для вычитания из текущего количества алмазов</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Inventory</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Inventory используется для инвентаря</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>inventory</literal> - текущий инвентарь</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>add()</literal></title>
-
-<para>Метод для добавления нового предмета в инвентарь</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Pumping</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Pumping используется для прокачки персонажа</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>level</literal> - текущий уровень игрока</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>up()</literal></title>
-
-<para>Метод для повышения уровня игрока</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Shop</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Shop используется для прокачки персонажа</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>shop</literal> - текущий список предметов в магазине</para></listitem>
-
-<listitem><para><literal>price</literal> - текущий список цен на предметы в магазине</para></listitem>
-
-<listitem><para><literal>currency</literal> - текущий счет игрока</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>buy()</literal></title>
-
-<para>Метод для покупки нового предмета</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Skin</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Skin используется для скинов персонажей</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>skin</literal> - текущий скин персонажа</para></listitem>
-
-<listitem><para><literal>skins</literal> - текущий список скинов персонажа</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>change()</literal></title>
-
-<para>Метод для смены скина</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Tasks</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Tasks используется для системы заданий</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>tasks</literal> - текущий список заданий</para></listitem>
-
-<listitem><para><literal>done\_tasks</literal> - список выполненных заданий</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>done()</literal></title>
-
-<para>Метод для выполнения задания</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Aim</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Aim используется для прицеливания</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>aim</literal> - текущая цель</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>off()</literal></title>
-
-<para>Метод для выключения прицела</para>
-
-</section>
-
-<section>
-
-<title><literal>on()</literal></title>
-
-<para>Метод для включения прицела</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Choose</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Choose используется для выбора оружия</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>current\_weapon</literal> - текущее оружие персонажа</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>change()</literal></title>
-
-<para>Метод для смены оружия персонажа</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Combat</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Combat используется для боевой системы</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>combat</literal> - текущая боевая система</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>change()</literal></title>
-
-<para>Метод для смены боевой системы</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс EnemyHit</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс EnemyHit используется для попадания по противнику</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>hit</literal> - текущее состояние противника</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>shot()</literal></title>
-
-<para>Метод для смены состояния противника после выстрела</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Equipment</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Equipment используется для элементов снаряжения</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>equipment</literal> - текущий список элементов снаряжения</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>set()</literal></title>
-
-<para>Метод для установки новых элементов снаряжения</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Kill</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Kill используется для убийства противника</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>alive</literal> - текущее состояние противника</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>kill()</literal></title>
-
-<para>Метод для убийства противника</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Recharge</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Recharge используется для перезарядки</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>bullets</literal> - текущее количество пуль</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>reload()</literal></title>
-
-<para>Метод для перезарядки</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс Shooting</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс Shooting используется для стрельбы</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>shot</literal> - текущее состояние оружия</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>shoot()</literal></title>
-
-<para>Метод для стрельбы</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-<chapter>
-
-<title>Класс TextureHit</title>
-
-<section>
-
-<title>Описание</title>
-
-<para>Класс TextureHit используется для попадания по текстурам</para>
-
-</section>
-
-<section>
-
-<title>Поля</title>
-
-<itemizedlist>
-
-<listitem><para><literal>hit</literal> - текущее состояние текстуры</para></listitem>
-
-</itemizedlist>
-
-</section>
-
-<section>
-
-<title>Методы</title>
-
-<section>
-
-<title><literal>shot()</literal></title>
-
-<para>Метод для смены состояния текстуры после выстрела</para>
-
-</section>
-
-</section>
-
-</chapter>
-
-</book>
+Метод для смены состояния текстуры после выстрела
